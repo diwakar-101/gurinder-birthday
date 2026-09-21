@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Gurinder! 🌟 🐾 The Champion & Dog Mom</title>
+  <meta name="description" content="A special birthday celebration website for Gurinder - champion athlete, incredible friend, and proud dog-mom to Nawab!">
+
+  <!-- Elegant Google Fonts: Great Vibes, Alex Brush, Playfair Display, Plus Jakarta Sans, Caveat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Caveat:wght@600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Subtle Ambient Sparkles Canvas (Gentle fairy dust & floating stars) -->
+  <canvas id="celebration-canvas"></canvas>
+
+  <!-- Ambient Audio & Celebration Floating Controller -->
+  <div class="audio-control-bar" id="audioBar">
+    <div class="music-vibe-dropdown" id="vibeDropdown">
+      <button class="music-toggle-btn" id="musicToggleBtn" title="Play / Pause Birthday Music" aria-label="Toggle Birthday Music">
+        <span class="music-icon" id="musicIcon">🎵</span>
+        <span class="music-label" id="musicLabel">Play Music</span>
+        <div class="music-wave" id="musicWave">
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </button>
+      <div class="vibe-selector-menu">
+        <button class="vibe-btn active" data-vibe="bday">🎂 Celebration Tune</button>
+        <button class="vibe-btn" data-vibe="runner">🏃‍♀️ Runner's High</button>
+        <button class="vibe-btn" data-vibe="nawab">🐾 Nawab's Lullaby</button>
+      </div>
+    </div>
+    
+    <button class="confetti-burst-btn" id="burstConfettiBtn" title="Throw Confetti Shower!" aria-label="Throw Confetti">
+      🎉 Throw Confetti
+    </button>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <span class="brand-paw">🐾</span>
+        <span class="brand-name">GURINDER’S SPECIAL DAY</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#hero">Start</a>
+        <a href="#hall-of-fame">Champion</a>
+        <a href="#nawab-corner">Nawab 🐶</a>
+        <a href="#cake-section">Make a Wish</a>
+        <a href="#gift-section">Open Gifts 🎁</a>
+        <a href="#wish-wall">Wish Wall 💌</a>
+        <a href="#letter-vault" class="nav-vault-btn">Secret Letter 🔐</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-badge-pill">
+          <span class="badge-sparkle">✨</span>
+          <span>TODAY WE CELEBRATE A TRUE CHAMPION</span>
+          <span class="badge-sparkle">✨</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="hero-prefix">Happy Birthday,</span>
+          <span class="hero-name gradient-script">Gurinder!</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Fierce on the track, golden in spirit, and the absolute queen of dog lovers. 
+          Here’s to another phenomenal year of breaking personal bests, chasing big dreams, and endless tail-wags with Nawab!
+        </p>
+
+        <!-- Highlights Badges -->
+        <div class="hero-traits">
+          <div class="trait-card">
+            <span class="trait-icon">🏃‍♀️</span>
+            <div class="trait-info">
+              <h4>Elite Athlete</h4>
+              <p>Relentless pace & grit</p>
+            </div>
+          </div>
+
+          <div class="trait-card">
+            <span class="trait-icon">🐕</span>
+            <div class="trait-info">
+              <h4>Nawab's Mom</h4>
+              <p>Unconditional paw-love</p>
+            </div>
+          </div>
+
+          <div class="trait-card">
+            <span class="trait-icon">🌟</span>
+            <div class="trait-info">
+              <h4>Pure Sunshine</h4>
+              <p>Lighting up every day</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Featured Visual Showcase -->
+        <div class="hero-art-wrapper">
+          <div class="hero-image-card">
+            <img src="assets/gurinder_athlete.jpg" alt="Gurinder running with joyful energy at sunrise with her loyal dog" class="hero-cover-img">
+            <div class="hero-image-overlay">
+              <span class="overlay-tag">🏅 Champion Vibe • Sunrise Miles & Happy Paws 🐾</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#letter-vault" class="btn-primary">
+            <span>Unlock Secret Letter</span>
+            <span class="btn-arrow">🔐</span>
+          </a>
+          <a href="#cake-section" class="btn-secondary">
+            <span>Blow Your Candles 🎂</span>
+          </a>
+          <a href="#gift-section" class="btn-accent">
+            <span>Unbox Birthday Gifts 🎁</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- HALL OF FAME / ATHLETE & DOG LOVER SECTION -->
+    <section class="hall-of-fame-section" id="hall-of-fame">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">THE GURINDER STANDARD</span>
+          <h2 class="section-title">Built Different: Athlete, Friend & Dog Mom</h2>
+          <p class="section-description">
+            What makes Gurinder truly one-of-a-kind? A fusion of iron discipline, radiant laughter, and a heart large enough to love every dog on Earth!
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card glass-panel">
+            <div class="card-icon-bubble">⚡</div>
+            <h3>Unstoppable Speed & Endurance</h3>
+            <p>
+              When everyone else slows down, Gurinder finds another gear. Whether it’s early morning sprints or conquering long fitness milestones, she defines dedication.
+            </p>
+            <div class="card-stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Heart & Hustle</span>
+            </div>
+          </div>
+
+          <div class="feature-card glass-panel">
+            <div class="card-icon-bubble">🐾</div>
+            <h3>Certified Dog Whisperer</h3>
+            <p>
+              A soul so gentle that every four-legged friend instantly falls in love. But among all of them, one royal pup holds her entire heart: her beloved Nawab.
+            </p>
+            <div class="card-stat">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">Belly Rubs Given</span>
+            </div>
+          </div>
+
+          <div class="feature-card glass-panel">
+            <div class="card-icon-bubble">🏆</div>
+            <h3>Podium Mentality</h3>
+            <p>
+              An athlete doesn't just run with their legs; they lead with their mind and spirit. Gurinder inspires everyone around her to raise their standards and keep pushing forward.
+            </p>
+            <div class="card-stat">
+              <span class="stat-number">Gold</span>
+              <span class="stat-label">Medal Energy</span>
+            </div>
+          </div>
+
+          <div class="feature-card glass-panel">
+            <div class="card-icon-bubble">💖</div>
+            <h3>Loyal, Fierce & Genuine</h3>
+            <p>
+              The kind of friend who always shows up, cheers the loudest from the sidelines, and brings warmth, humor, and pure authenticity everywhere she steps.
+            </p>
+            <div class="card-stat">
+              <span class="stat-number">Top-Tier</span>
+              <span class="stat-label">Friendship</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- NAWAB'S ROYAL CORNER & INTERACTIVE HAPPINESS METER + BOOP STATION -->
+    <section class="nawab-section" id="nawab-corner">
+      <div class="container">
+        <div class="nawab-card glass-panel">
+          <div class="nawab-grid">
+            
+            <div class="nawab-visual">
+              <div class="nawab-photo-frame">
+                <img src="assets/nawab.jpg" alt="His Royal Highness Nawab wearing a birthday crown and bandana" class="nawab-img" id="nawabPhoto">
+                <div class="nawab-crown-badge">
+                  <span>👑 NAWAB THE FIRST</span>
+                </div>
+              </div>
+
+              <!-- Interactive Nose Boop Button -->
+              <button class="boop-button" id="boopBtn" title="Boop Nawab's Nose!">
+                <span class="boop-icon">🐶</span>
+                <span class="boop-text">Boop Nawab's Nose!</span>
+                <span class="boop-counter" id="boopCountBadge">0 Boops</span>
+              </button>
+
+              <div class="nawab-speech-bubble" id="nawabSpeech">
+                "Woof! Happy Birthday Mommy Gurinder! I love you more than all the treats & tennis balls in the world!"
+              </div>
+            </div>
+
+            <div class="nawab-content">
+              <div class="nawab-header">
+                <span class="section-tag">ROYAL BESTIE</span>
+                <h2>Meet Nawab: Her Official Personal Trainer</h2>
+                <p>
+                  Chief moral supporter, early morning alarm clock, and Gurinder's fiercest protector. Nawab knows his mom is a superstar!
+                </p>
+              </div>
+
+              <!-- Interactive Happiness Meter -->
+              <div class="nawab-meter-box">
+                <div class="meter-header">
+                  <span class="meter-title">Nawab's Joy Meter:</span>
+                  <span class="meter-status" id="meterStatus">Excited Wagging! 🐾</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" id="progressFill" style="width: 75%;"></div>
+                </div>
+                <p class="meter-hint">Pamper Nawab to fuel him for Gurinder's birthday celebration!</p>
+              </div>
+
+              <!-- Interactive Action Buttons -->
+              <div class="nawab-actions">
+                <button class="nawab-btn" id="btnTreat" title="Give Nawab a delicious treat">
+                  <span>🦴</span> Give Bone Treat
+                </button>
+                <button class="nawab-btn" id="btnBall" title="Throw a tennis ball for Nawab">
+                  <span>🎾</span> Throw Ball
+                </button>
+                <button class="nawab-btn" id="btnScratches" title="Give Nawab gentle ear scratches">
+                  <span>🐾</span> Ear Scratches
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- INTERACTIVE BIRTHDAY CAKE SECTION -->
+    <section class="cake-section" id="cake-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">MAKE A BIRTHDAY WISH</span>
+          <h2 class="section-title">Blow the Candles, Gurinder!</h2>
+          <p class="section-description">
+            Close your eyes, visualize your greatest victory this year, and click the cake or candles to blow them out!
+          </p>
+        </div>
+
+        <div class="cake-stage">
+          
+          <!-- Virtual Birthday Cake -->
+          <div class="cake-wrapper" id="cakeWrapper" role="button" tabindex="0" aria-label="Interactive Birthday Cake. Click to blow out candles">
+            
+            <!-- Candles -->
+            <div class="candles-container">
+              <div class="candle">
+                <div class="flame" id="flame1"></div>
+                <div class="smoke" id="smoke1"></div>
+                <div class="wick"></div>
+                <div class="stick stick-1"></div>
+              </div>
+              <div class="candle">
+                <div class="flame" id="flame2"></div>
+                <div class="smoke" id="smoke2"></div>
+                <div class="wick"></div>
+                <div class="stick stick-2"></div>
+              </div>
+              <div class="candle">
+                <div class="flame" id="flame3"></div>
+                <div class="smoke" id="smoke3"></div>
+                <div class="wick"></div>
+                <div class="stick stick-3"></div>
+              </div>
+            </div>
+
+            <!-- Cake Layers -->
+            <div class="cake-tier tier-top">
+              <div class="frosting-drops">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="cake-tier tier-middle">
+              <div class="cake-stripe"></div>
+            </div>
+            <div class="cake-tier tier-bottom">
+              <div class="cake-decorations">
+                <span>🍓</span><span>🌟</span><span>🐾</span><span>🌟</span><span>🍓</span>
+              </div>
+            </div>
+            <div class="cake-plate"></div>
+          </div>
+
+          <div class="wish-status-box" id="wishStatusBox">
+            <p class="wish-instruction" id="wishInstruction">
+              👆 <strong>Tap or click the candles</strong> to blow them out!
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ADDON FEATURE: VIRTUAL BIRTHDAY GIFT BOX UNBOXER -->
+    <section class="gift-section" id="gift-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">SPECIAL DELIVERY FOR GURINDER</span>
+          <h2 class="section-title">A Birthday Gift For You 🎁</h2>
+          <p class="section-description">
+            Your friends and Nawab put together 3 exclusive VIP Birthday Vouchers! Tap the gift box to open it!
+          </p>
+        </div>
+
+        <div class="gift-box-stage">
+          <div class="gift-container" id="giftContainer">
+            <div class="gift-box" id="giftBox" role="button" tabindex="0" title="Click to open your gift box!">
+              <div class="gift-lid" id="giftLid">
+                <div class="gift-bow">🎀</div>
+                <div class="gift-ribbon-v"></div>
+              </div>
+              <div class="gift-body">
+                <div class="gift-ribbon-v"></div>
+                <div class="gift-ribbon-h"></div>
+                <span class="gift-tap-hint">Tap to Unbox! ✨</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Revealed Vouchers -->
+          <div class="vouchers-reveal" id="vouchersReveal" style="display: none;">
+            <h3 class="vouchers-title">🎉 Surprise! You unlocked 3 Birthday Vouchers:</h3>
+            <div class="vouchers-grid">
+              
+              <div class="voucher-card">
+                <div class="voucher-badge">VOUCHER #1 🏃‍♀️</div>
+                <h4>Personal Race Cheer Squad</h4>
+                <p>Guaranteed loudest cheering squad, energy drinks, and finish-line celebration for all your upcoming races!</p>
+                <div class="voucher-footer">Redeemable: Anytime this year ✨</div>
+              </div>
+
+              <div class="voucher-card">
+                <div class="voucher-badge">VOUCHER #2 🐶</div>
+                <h4>Nawab's Royal Day Off</h4>
+                <p>Free dog-sitting, luxury pup treats, and extra long park strolls for Nawab so Gurinder can relax guilt-free!</p>
+                <div class="voucher-footer">Redeemable: On demand 🐾</div>
+              </div>
+
+              <div class="voucher-card">
+                <div class="voucher-badge">VOUCHER #3 🍰</div>
+                <h4>Post-Run Victory Feast</h4>
+                <p>An all-you-can-eat feast with your favorite pizza, cheat meal, and dessert. Calories don't count on birthdays!</p>
+                <div class="voucher-footer">Redeemable: Today & forever 🍕</div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ADDON FEATURE: INTERACTIVE WISH WALL (Leave a Wish) -->
+    <section class="wish-wall-section" id="wish-wall">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">COMMUNITY CELEBRATION</span>
+          <h2 class="section-title">The Gurinder Wish Wall 📌</h2>
+          <p class="section-description">
+            Warm wishes, running cheers, and love pinned just for you! Feel free to add your own note!
+          </p>
+        </div>
+
+        <div class="wish-wall-container">
+          
+          <div class="wish-notes-grid" id="wishNotesGrid">
+            <div class="sticky-note note-yellow">
+              <span class="pin">📌</span>
+              <p class="note-text">"Happy Birthday Gurinder! Keep breaking records and setting the pace. Proud of you always!"</p>
+              <span class="note-author">— Your Running Buddy 🏃</span>
+            </div>
+
+            <div class="sticky-note note-pink">
+              <span class="pin">📌</span>
+              <p class="note-text">"WOOF WOOF! Best mommy in the world! Nawab gives you 1000 wet nose kisses today!"</p>
+              <span class="note-author">— Nawab 🐾👑</span>
+            </div>
+
+            <div class="sticky-note note-cyan">
+              <span class="pin">📌</span>
+              <p class="note-text">"To the kindest, funniest, and most energetic soul! May your year be filled with gold medal moments!"</p>
+              <span class="note-author">— Bestie Squad 💖</span>
+            </div>
+
+            <div class="sticky-note note-orange">
+              <span class="pin">📌</span>
+              <p class="note-text">"Never stop chasing what makes your heart beat faster. You are an inspiration Gurinder!"</p>
+              <span class="note-author">— Champion Fan 🌟</span>
+            </div>
+          </div>
+
+          <!-- Add a note form -->
+          <div class="add-note-box glass-panel">
+            <h4>Leave a Birthday Wish for Gurinder:</h4>
+            <div class="add-note-inputs">
+              <input type="text" id="noteAuthorInput" placeholder="Your Name..." maxlength="30" class="note-input">
+              <input type="text" id="noteTextInput" placeholder="Write your warm wish..." maxlength="120" class="note-input note-input-msg">
+              <button class="btn-secondary" id="postNoteBtn">Pin Wish 📌</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- THE SECRET VAULT: PASSWORD PROTECTED BIRTHDAY LETTER -->
+    <section class="letter-vault-section" id="letter-vault">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">TOP SECRET • FOR GURINDER’S EYES ONLY</span>
+          <h2 class="section-title">The Royal Birthday Letter</h2>
+          <p class="section-description">
+            A special message has been sealed inside this vault. Only the name of her royal four-legged protector holds the key...
+          </p>
+        </div>
+
+        <div class="vault-wrapper">
+          
+          <!-- LOCKED STATE -->
+          <div class="vault-lockbox glass-panel" id="vaultLockbox">
+            
+            <div class="lock-graphic-container">
+              <div class="padlock" id="padlockGraphic">
+                <div class="padlock-shackle"></div>
+                <div class="padlock-body">
+                  <span class="lock-paw">🐾</span>
+                  <div class="keyhole"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="vault-prompt">
+              <h3>Vault Locked</h3>
+              <p class="vault-hint-text">
+                Hint: Who is her handsome, crowned furry shadow who loves treats and morning walks?
+              </p>
+            </div>
+
+            <form class="password-form" id="passwordForm" onsubmit="return false;">
+              <div class="input-group">
+                <span class="input-icon">🐕</span>
+                <input 
+                  type="text" 
+                  id="vaultPasswordInput" 
+                  class="vault-input" 
+                  placeholder="Enter dog's name..." 
+                  autocomplete="off"
+                  autocapitalize="off"
+                  spellcheck="false"
+                  required
+                >
+              </div>
+              <button type="submit" class="unlock-btn" id="unlockBtn">
+                <span>Unlock Letter</span>
+                <span class="btn-lock-icon">🔓</span>
+              </button>
+            </form>
+
+            <div class="vault-feedback" id="vaultFeedback" aria-live="polite"></div>
+          </div>
+
+          <!-- UNLOCKED LETTER DISPLAY -->
+          <div class="letter-reveal-container" id="letterRevealContainer" style="display: none;">
+            
+            <div class="letter-parchment" id="letterParchment">
+              
+              <div class="letter-stamp-corner">
+                <div class="golden-seal">
+                  <span>🐾 NAWAB APPROVED</span>
+                </div>
+              </div>
+
+              <div class="letter-header-content">
+                <span class="letter-date">A Special Day for a Champion ✨</span>
+                <h3 class="letter-salutation">Dearest Gurinder,</h3>
+              </div>
+
+              <div class="letter-body-content">
+                <p>
+                  Today isn’t just an ordinary calendar day; it’s the day the world was blessed with an absolute force of nature. 
+                  From the moment you set your eyes on a goal, you attack it with a spirit, tenacity, and athletic fire that leaves 
+                  everyone in awe. Whether you’re pounding the pavement, crushing training sessions, or gracefully conquering every 
+                  challenge life throws in front of you, you do it with unmatched poise.
+                </p>
+
+                <p>
+                  Yet, for all your athletic ferocity, your heart is what truly sets you apart. The way you light up when you see 
+                  a dog, and above all, that celestial bond you share with <strong>Nawab</strong>. To him, you aren’t just a runner or an athlete; 
+                  you are his entire universe, his protector, his favorite playmate, and his greatest love. That loyalty, devotion, and gentle 
+                  kindness you carry reflects in everything you touch.
+                </p>
+
+                <p>
+                  As you blow out your candles today, I hope you pause to realize just how deeply appreciated, loved, and admired you are. 
+                  May this next lap around the sun reward you with personal bests, endless energy, podium moments, unconditional joy, 
+                  and a lifetime of wagging tails and warm cuddles with Nawab.
+                </p>
+
+                <p class="letter-closing">
+                  Keep shining, keep running with your head held high, and keep inspiring all of us!
+                </p>
+
+                <div class="letter-signature-area">
+                  <p class="signature-tag">With endless admiration & biggest birthday cheers,</p>
+                  <h4 class="signature-name">Your Biggest Fan & Cheer Squad 🥂✨</h4>
+                  <div class="paws-signature">
+                    <span>🐾</span> <em>(And a big wet nose boop from Nawab!)</em>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Letter Actions -->
+              <div class="letter-actions">
+                <button class="action-btn print-btn" id="printLetterBtn">
+                  🖨️ Save / Print as Keepsake
+                </button>
+                <button class="action-btn cheer-btn" id="cheerVaultBtn">
+                  🎉 Blast More Confetti!
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ATHLETE & DOG MOM INSPIRATIONAL TOAST / CHEER DISPENSER -->
+    <section class="cheer-dispenser-section">
+      <div class="container">
+        <div class="cheer-box glass-panel">
+          <div class="cheer-bubble-icon">🌟</div>
+          <h3 class="cheer-headline">Today's Champion Affirmation for Gurinder</h3>
+          <p class="cheer-quote" id="cheerQuote">
+            "You were born to run fast, love deeply, and leave a trail of happiness wherever your sneakers take you!"
+          </p>
+          <button class="btn-secondary cheer-next-btn" id="nextCheerBtn">
+            <span>Get Another Birthday Cheer 🎲</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-paws">
+        <span>🐾</span><span>🏃‍♀️</span><span>🎂</span><span>🐶</span><span>🌟</span>
+      </div>
+      <p class="footer-text">
+        Crafted with love & celebration for <strong>Gurinder</strong> on her Birthday.
+      </p>
+      <p class="footer-subtext">
+        Remember to give Nawab an extra treat, tie your laces tight, and conquer the year ahead! 🥇
+      </p>
+      <a href="#hero" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
