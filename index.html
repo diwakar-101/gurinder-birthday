@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday Gurinder! 🌟 🐾 The Champion & Dog Mom</title>
-  <meta name="description" content="A special birthday celebration website for Gurinder - champion athlete, incredible friend, and proud dog-mom to Nawab!">
+  <title>Happy Birthday Gurinder! 🌟 🐾 The Champion & Dog Dad | Cricket & Football Ace</title>
+  <meta name="description" content="A special birthday celebration website for Gurinder - champion athlete, cricket & football ace, incredible brother & friend, and proud dog-dad to his boy Nawab!">
 
   <!-- Elegant Google Fonts: Great Vibes, Alex Brush, Playfair Display, Plus Jakarta Sans, Caveat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,10 +28,13 @@
           <span></span><span></span><span></span><span></span>
         </div>
       </button>
-      <div class="vibe-selector-menu">
+      <button class="vibe-menu-trigger" id="vibeMenuTrigger" title="Select Music Tune / Vibe" aria-label="Select Music Tune">
+        <span class="vibe-trigger-icon">🎛️</span>
+      </button>
+      <div class="vibe-selector-menu" id="vibeSelectorMenu">
         <button class="vibe-btn active" data-vibe="bday">🎂 Celebration Tune</button>
-        <button class="vibe-btn" data-vibe="runner">🏃‍♀️ Runner's High</button>
-        <button class="vibe-btn" data-vibe="nawab">🐾 Nawab's Lullaby</button>
+        <button class="vibe-btn" data-vibe="stadium">⚽ Stadium Anthem</button>
+        <button class="vibe-btn" data-vibe="nawab">🐾 Nawab's Melody</button>
       </div>
     </div>
     
@@ -47,14 +50,19 @@
         <span class="brand-paw">🐾</span>
         <span class="brand-name">GURINDER’S SPECIAL DAY</span>
       </div>
-      <nav class="nav-links">
-        <a href="#hero">Start</a>
-        <a href="#hall-of-fame">Champion</a>
-        <a href="#nawab-corner">Nawab 🐶</a>
-        <a href="#cake-section">Make a Wish</a>
-        <a href="#gift-section">Open Gifts 🎁</a>
-        <a href="#wish-wall">Wish Wall 💌</a>
-        <a href="#letter-vault" class="nav-vault-btn">Secret Letter 🔐</a>
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link">Start</a>
+        <a href="#hall-of-fame" class="nav-link">Champion</a>
+        <a href="#nawab-corner" class="nav-link">Nawab 🐶</a>
+        <a href="#cake-section" class="nav-link">Make a Wish</a>
+        <a href="#gift-section" class="nav-link">Open Gifts 🎁</a>
+        <a href="#wish-wall" class="nav-link">Wish Wall 💌</a>
+        <a href="#letter-vault" class="nav-link nav-vault-btn">Secret Letter 🔐</a>
       </nav>
     </div>
   </header>
@@ -66,7 +74,7 @@
         
         <div class="hero-badge-pill">
           <span class="badge-sparkle">✨</span>
-          <span>TODAY WE CELEBRATE A TRUE CHAMPION</span>
+          <span>TODAY WE CELEBRATE A TRUE CHAMPION & LEGEND</span>
           <span class="badge-sparkle">✨</span>
         </div>
 
@@ -76,33 +84,33 @@
         </h1>
 
         <p class="hero-subtitle">
-          Fierce on the track, golden in spirit, and the absolute queen of dog lovers. 
-          Here’s to another phenomenal year of breaking personal bests, chasing big dreams, and endless tail-wags with Nawab!
+          Powerhouse on the pitch, maestro with the ball, and the undisputed king of dog dads. 
+          Here’s to another phenomenal year of smashing sixes, scoring stunners, chasing big dreams, and endless playtime with his loyal boy Nawab!
         </p>
 
         <!-- Highlights Badges -->
         <div class="hero-traits">
           <div class="trait-card">
-            <span class="trait-icon">🏃‍♀️</span>
+            <span class="trait-icon">🏏</span>
             <div class="trait-info">
-              <h4>Elite Athlete</h4>
-              <p>Relentless pace & grit</p>
+              <h4>Cricket & Football Ace</h4>
+              <p>Pitch maestro & powerhouse</p>
             </div>
           </div>
 
           <div class="trait-card">
             <span class="trait-icon">🐕</span>
             <div class="trait-info">
-              <h4>Nawab's Mom</h4>
-              <p>Unconditional paw-love</p>
+              <h4>Proud Dog Dad</h4>
+              <p>Unconditional love for his boy Nawab</p>
             </div>
           </div>
 
           <div class="trait-card">
             <span class="trait-icon">🌟</span>
             <div class="trait-info">
-              <h4>Pure Sunshine</h4>
-              <p>Lighting up every day</p>
+              <h4>Pure Champion Spirit</h4>
+              <p>Lighting up every pitch & room</p>
             </div>
           </div>
         </div>
@@ -110,9 +118,9 @@
         <!-- Hero Featured Visual Showcase -->
         <div class="hero-art-wrapper">
           <div class="hero-image-card">
-            <img src="assets/gurinder_athlete.jpg" alt="Gurinder running with joyful energy at sunrise with her loyal dog" class="hero-cover-img">
+            <img src="assets/gurinder_athlete.jpg" alt="Gurinder celebrating sports victory with cricket bat, football, and his loyal dog Nawab" class="hero-cover-img">
             <div class="hero-image-overlay">
-              <span class="overlay-tag">🏅 Champion Vibe • Sunrise Miles & Happy Paws 🐾</span>
+              <span class="overlay-tag">🏅 Champion Vibe • Cricket Sixes, Golazos & Nawab's Joy 🐾</span>
             </div>
           </div>
         </div>
@@ -131,66 +139,63 @@
         </div>
 
       </div>
-    </section>
-
-
-    <!-- HALL OF FAME / ATHLETE & DOG LOVER SECTION -->
+    </section>    <!-- HALL OF FAME / ATHLETE & DOG LOVER SECTION -->
     <section class="hall-of-fame-section" id="hall-of-fame">
       <div class="container">
         <div class="section-header">
           <span class="section-tag">THE GURINDER STANDARD</span>
-          <h2 class="section-title">Built Different: Athlete, Friend & Dog Mom</h2>
+          <h2 class="section-title">Built Different: Sportsman, Leader & Dog Dad</h2>
           <p class="section-description">
-            What makes Gurinder truly one-of-a-kind? A fusion of iron discipline, radiant laughter, and a heart large enough to love every dog on Earth!
+            What makes Gurinder truly one-of-a-kind? A fusion of cricket brilliance, football finesse, unbreakable sportsmanship, and a heart overflowing with love for his handsome boy Nawab!
           </p>
         </div>
 
         <div class="features-grid">
           <div class="feature-card glass-panel">
-            <div class="card-icon-bubble">⚡</div>
-            <h3>Unstoppable Speed & Endurance</h3>
+            <div class="card-icon-bubble">🏏</div>
+            <h3>Master of Pitch & Field</h3>
             <p>
-              When everyone else slows down, Gurinder finds another gear. Whether it’s early morning sprints or conquering long fitness milestones, she defines dedication.
+              Whether timing a crisp cover drive over the ropes on the cricket pitch or bending a decisive strike into the top corner in football, Gurinder brings electric skill and clutch passion to every game.
             </p>
             <div class="card-stat">
-              <span class="stat-number">100%</span>
-              <span class="stat-label">Heart & Hustle</span>
+              <span class="stat-number">MVP</span>
+              <span class="stat-label">Match Winner</span>
             </div>
           </div>
 
           <div class="feature-card glass-panel">
             <div class="card-icon-bubble">🐾</div>
-            <h3>Certified Dog Whisperer</h3>
+            <h3>Certified Dog Dad & Best Pal</h3>
             <p>
-              A soul so gentle that every four-legged friend instantly falls in love. But among all of them, one royal pup holds her entire heart: her beloved Nawab.
+              A true gentleman whose eyes light up for man's best friend. But among all pups, one royal boy holds his entire heart: his handsome, loyal four-legged shadow, Nawab.
             </p>
             <div class="card-stat">
               <span class="stat-number">∞</span>
-              <span class="stat-label">Belly Rubs Given</span>
+              <span class="stat-label">Belly Rubs & Fetch</span>
             </div>
           </div>
 
           <div class="feature-card glass-panel">
             <div class="card-icon-bubble">🏆</div>
-            <h3>Podium Mentality</h3>
+            <h3>Unbeatable Winner's Mindset</h3>
             <p>
-              An athlete doesn't just run with their legs; they lead with their mind and spirit. Gurinder inspires everyone around her to raise their standards and keep pushing forward.
+              A true athlete doesn't just play the game; he lifts his entire squad up. Gurinder leads with discipline, relentless drive, and an infectious positivity that turns every challenge into a triumph.
             </p>
             <div class="card-stat">
               <span class="stat-number">Gold</span>
-              <span class="stat-label">Medal Energy</span>
+              <span class="stat-label">Medal Mentality</span>
             </div>
           </div>
 
           <div class="feature-card glass-panel">
-            <div class="card-icon-bubble">💖</div>
-            <h3>Loyal, Fierce & Genuine</h3>
+            <div class="card-icon-bubble">🤝</div>
+            <h3>Loyal Brother & Gold-Standard Friend</h3>
             <p>
-              The kind of friend who always shows up, cheers the loudest from the sidelines, and brings warmth, humor, and pure authenticity everywhere she steps.
+              The kind of man who always stands firm in your corner, cheers your wins louder than his own, and brings genuine humor, strength, and unwavering brotherhood wherever he goes.
             </p>
             <div class="card-stat">
               <span class="stat-number">Top-Tier</span>
-              <span class="stat-label">Friendship</span>
+              <span class="stat-label">Brotherhood</span>
             </div>
           </div>
         </div>
@@ -208,7 +213,7 @@
               <div class="nawab-photo-frame">
                 <img src="assets/nawab.jpg" alt="His Royal Highness Nawab wearing a birthday crown and bandana" class="nawab-img" id="nawabPhoto">
                 <div class="nawab-crown-badge">
-                  <span>👑 NAWAB THE FIRST</span>
+                  <span>👑 NAWAB THE FIRST • GOOD BOY</span>
                 </div>
               </div>
 
@@ -220,16 +225,16 @@
               </button>
 
               <div class="nawab-speech-bubble" id="nawabSpeech">
-                "Woof! Happy Birthday Mommy Gurinder! I love you more than all the treats & tennis balls in the world!"
+                "Woof! Happy Birthday Dad Gurinder! You're the best dog dad ever, and I love you more than all the cricket balls, footballs & treats in the world!"
               </div>
             </div>
 
             <div class="nawab-content">
               <div class="nawab-header">
                 <span class="section-tag">ROYAL BESTIE</span>
-                <h2>Meet Nawab: Her Official Personal Trainer</h2>
+                <h2>Meet Nawab: His Official Match Day Partner & Trainer</h2>
                 <p>
-                  Chief moral supporter, early morning alarm clock, and Gurinder's fiercest protector. Nawab knows his mom is a superstar!
+                  Chief match strategist, lightning-fast ball retriever, and Gurinder's fiercest furry bodyguard. Nawab is proud of his dad—a true champion on and off the pitch!
                 </p>
               </div>
 
@@ -242,7 +247,7 @@
                 <div class="progress-track">
                   <div class="progress-fill" id="progressFill" style="width: 75%;"></div>
                 </div>
-                <p class="meter-hint">Pamper Nawab to fuel him for Gurinder's birthday celebration!</p>
+                <p class="meter-hint">Pamper Nawab to fuel him for Dad Gurinder's birthday celebration!</p>
               </div>
 
               <!-- Interactive Action Buttons -->
@@ -250,11 +255,11 @@
                 <button class="nawab-btn" id="btnTreat" title="Give Nawab a delicious treat">
                   <span>🦴</span> Give Bone Treat
                 </button>
-                <button class="nawab-btn" id="btnBall" title="Throw a tennis ball for Nawab">
-                  <span>🎾</span> Throw Ball
+                <button class="nawab-btn" id="btnBall" title="Throw a cricket ball for Nawab">
+                  <span>🏏</span> Throw Cricket Ball
                 </button>
-                <button class="nawab-btn" id="btnScratches" title="Give Nawab gentle ear scratches">
-                  <span>🐾</span> Ear Scratches
+                <button class="nawab-btn" id="btnFootball" title="Kick a football for Nawab to chase">
+                  <span>⚽</span> Pass Football
                 </button>
               </div>
 
@@ -338,7 +343,7 @@
           <span class="section-tag">SPECIAL DELIVERY FOR GURINDER</span>
           <h2 class="section-title">A Birthday Gift For You 🎁</h2>
           <p class="section-description">
-            Your friends and Nawab put together 3 exclusive VIP Birthday Vouchers! Tap the gift box to open it!
+            Your friends and your boy Nawab put together 3 exclusive VIP Birthday Vouchers! Tap the gift box to open it!
           </p>
         </div>
 
@@ -359,28 +364,28 @@
 
           <!-- Revealed Vouchers -->
           <div class="vouchers-reveal" id="vouchersReveal" style="display: none;">
-            <h3 class="vouchers-title">🎉 Surprise! You unlocked 3 Birthday Vouchers:</h3>
+            <h3 class="vouchers-title">🎉 Surprise! You unlocked 3 VIP Birthday Vouchers:</h3>
             <div class="vouchers-grid">
               
               <div class="voucher-card">
-                <div class="voucher-badge">VOUCHER #1 🏃‍♀️</div>
-                <h4>Personal Race Cheer Squad</h4>
-                <p>Guaranteed loudest cheering squad, energy drinks, and finish-line celebration for all your upcoming races!</p>
-                <div class="voucher-footer">Redeemable: Anytime this year ✨</div>
+                <div class="voucher-badge">VOUCHER #1 🏏⚽</div>
+                <h4>VIP Stadium & Match Day Squad</h4>
+                <p>Guaranteed front-row cheer squad, chilled energy drinks, and pitch-side hype for all your cricket fixtures and football games!</p>
+                <div class="voucher-footer">Redeemable: All Season Long 🏆</div>
               </div>
 
               <div class="voucher-card">
                 <div class="voucher-badge">VOUCHER #2 🐶</div>
-                <h4>Nawab's Royal Day Off</h4>
-                <p>Free dog-sitting, luxury pup treats, and extra long park strolls for Nawab so Gurinder can relax guilt-free!</p>
+                <h4>Nawab's Royal Day Out</h4>
+                <p>Free pup-sitting, gourmet treats, and extra long park strolls for Nawab so Dad Gurinder can relax guilt-free or hit the pitch!</p>
                 <div class="voucher-footer">Redeemable: On demand 🐾</div>
               </div>
 
               <div class="voucher-card">
-                <div class="voucher-badge">VOUCHER #3 🍰</div>
-                <h4>Post-Run Victory Feast</h4>
-                <p>An all-you-can-eat feast with your favorite pizza, cheat meal, and dessert. Calories don't count on birthdays!</p>
-                <div class="voucher-footer">Redeemable: Today & forever 🍕</div>
+                <div class="voucher-badge">VOUCHER #3 🍕</div>
+                <h4>Post-Match Victory Feast</h4>
+                <p>An epic all-you-can-eat feast featuring your favorite burgers, pizza, biryani, and celebratory dessert. Matchday calories don't count!</p>
+                <div class="voucher-footer">Redeemable: Today & whenever hunger strikes 🍔</div>
               </div>
 
             </div>
@@ -398,7 +403,7 @@
           <span class="section-tag">COMMUNITY CELEBRATION</span>
           <h2 class="section-title">The Gurinder Wish Wall 📌</h2>
           <p class="section-description">
-            Warm wishes, running cheers, and love pinned just for you! Feel free to add your own note!
+            Warm wishes, match cheers, and brotherly love pinned just for you! Feel free to add your own note!
           </p>
         </div>
 
@@ -407,26 +412,26 @@
           <div class="wish-notes-grid" id="wishNotesGrid">
             <div class="sticky-note note-yellow">
               <span class="pin">📌</span>
-              <p class="note-text">"Happy Birthday Gurinder! Keep breaking records and setting the pace. Proud of you always!"</p>
-              <span class="note-author">— Your Running Buddy 🏃</span>
+              <p class="note-text">"Happy Birthday Gurinder! Keep smashing boundaries, scoring stunners, and setting the pace. Proud of you brother!"</p>
+              <span class="note-author">— Sports & Gym Bro 🏏⚽</span>
             </div>
 
             <div class="sticky-note note-pink">
               <span class="pin">📌</span>
-              <p class="note-text">"WOOF WOOF! Best mommy in the world! Nawab gives you 1000 wet nose kisses today!"</p>
-              <span class="note-author">— Nawab 🐾👑</span>
+              <p class="note-text">"WOOF WOOF! Best dog dad in the universe! Nawab gives you 1000 wet nose kisses and tail-wags today!"</p>
+              <span class="note-author">— Nawab 🐾👑 (Your Good Boy)</span>
             </div>
 
             <div class="sticky-note note-cyan">
               <span class="pin">📌</span>
-              <p class="note-text">"To the kindest, funniest, and most energetic soul! May your year be filled with gold medal moments!"</p>
-              <span class="note-author">— Bestie Squad 💖</span>
+              <p class="note-text">"To the sharpest player, loyal friend, and all-round legend! May your year be packed with match-winning glory!"</p>
+              <span class="note-author">— The Boys & Bestie Squad 🏆🔥</span>
             </div>
 
             <div class="sticky-note note-orange">
               <span class="pin">📌</span>
-              <p class="note-text">"Never stop chasing what makes your heart beat faster. You are an inspiration Gurinder!"</p>
-              <span class="note-author">— Champion Fan 🌟</span>
+              <p class="note-text">"Never stop hitting life's bouncers for six and aiming for the top corner. You're an inspiration, Gurinder!"</p>
+              <span class="note-author">— Your Biggest Cheerleader 🌟</span>
             </div>
           </div>
 
@@ -452,7 +457,7 @@
           <span class="section-tag">TOP SECRET • FOR GURINDER’S EYES ONLY</span>
           <h2 class="section-title">The Royal Birthday Letter</h2>
           <p class="section-description">
-            A special message has been sealed inside this vault. Only the name of her royal four-legged protector holds the key...
+            A special message has been sealed inside this vault. Only the name of his royal four-legged protector holds the key...
           </p>
         </div>
 
@@ -474,7 +479,7 @@
             <div class="vault-prompt">
               <h3>Vault Locked</h3>
               <p class="vault-hint-text">
-                Hint: Who is her handsome, crowned furry shadow who loves treats and morning walks?
+                Hint: Who is his handsome, crowned furry shadow who loves treats, balls, and morning walks?
               </p>
             </div>
 
@@ -519,34 +524,34 @@
 
               <div class="letter-body-content">
                 <p>
-                  Today isn’t just an ordinary calendar day; it’s the day the world was blessed with an absolute force of nature. 
-                  From the moment you set your eyes on a goal, you attack it with a spirit, tenacity, and athletic fire that leaves 
-                  everyone in awe. Whether you’re pounding the pavement, crushing training sessions, or gracefully conquering every 
-                  challenge life throws in front of you, you do it with unmatched poise.
+                  Today isn’t just an ordinary calendar day; it’s the day the world was blessed with an absolute powerhouse of a man. 
+                  From the moment you step onto a pitch, bat in hand or ball at your feet, you play with an electric spirit, tactical grit, 
+                  and athletic fire that commands respect. Whether you’re smashing sixes out of the stadium, scoring clinical goals 
+                  on the football field, or conquering every challenge life throws in your path, you do it like a true champion.
                 </p>
 
                 <p>
-                  Yet, for all your athletic ferocity, your heart is what truly sets you apart. The way you light up when you see 
-                  a dog, and above all, that celestial bond you share with <strong>Nawab</strong>. To him, you aren’t just a runner or an athlete; 
-                  you are his entire universe, his protector, his favorite playmate, and his greatest love. That loyalty, devotion, and gentle 
-                  kindness you carry reflects in everything you touch.
+                  Yet, for all your athletic ferocity and drive, your big heart is what truly sets you apart. The way you light up 
+                  around dogs, and above all, that unbreakable bond you share with your handsome boy <strong>Nawab</strong>. To him, 
+                  you aren’t just a sportsman; you are his hero, his dad, his favorite playmate, and his entire world. That loyalty, 
+                  strength, and warmth you bring to every friendship reflects in everything you touch.
                 </p>
 
                 <p>
-                  As you blow out your candles today, I hope you pause to realize just how deeply appreciated, loved, and admired you are. 
-                  May this next lap around the sun reward you with personal bests, endless energy, podium moments, unconditional joy, 
-                  and a lifetime of wagging tails and warm cuddles with Nawab.
+                  As you blow out your candles today, I hope you pause to realize just how deeply appreciated, respected, and admired you are. 
+                  May this next lap around the sun reward you with match-winning glory, unforgettable goals, boundless health, 
+                  unconditional joy, and endless games of fetch with Nawab.
                 </p>
 
                 <p class="letter-closing">
-                  Keep shining, keep running with your head held high, and keep inspiring all of us!
+                  Keep dominating the field, keep your head held high, and keep inspiring all of us!
                 </p>
 
                 <div class="letter-signature-area">
                   <p class="signature-tag">With endless admiration & biggest birthday cheers,</p>
-                  <h4 class="signature-name">Your Biggest Fan & Cheer Squad 🥂✨</h4>
+                  <h4 class="signature-name">Your Biggest Fans & Cheer Squad 🥂✨</h4>
                   <div class="paws-signature">
-                    <span>🐾</span> <em>(And a big wet nose boop from Nawab!)</em>
+                    <span>🐾</span> <em>(And a big wet nose boop from your boy Nawab!)</em>
                   </div>
                 </div>
               </div>
@@ -570,14 +575,14 @@
     </section>
 
 
-    <!-- ATHLETE & DOG MOM INSPIRATIONAL TOAST / CHEER DISPENSER -->
+    <!-- ATHLETE, SPORTSMAN & DOG DAD INSPIRATIONAL TOAST / CHEER DISPENSER -->
     <section class="cheer-dispenser-section">
       <div class="container">
         <div class="cheer-box glass-panel">
           <div class="cheer-bubble-icon">🌟</div>
           <h3 class="cheer-headline">Today's Champion Affirmation for Gurinder</h3>
           <p class="cheer-quote" id="cheerQuote">
-            "You were born to run fast, love deeply, and leave a trail of happiness wherever your sneakers take you!"
+            "You were born to play hard, love unconditionally, and hit every challenge life pitches straight out of the park!"
           </p>
           <button class="btn-secondary cheer-next-btn" id="nextCheerBtn">
             <span>Get Another Birthday Cheer 🎲</span>
@@ -592,13 +597,13 @@
   <footer class="site-footer">
     <div class="container footer-content">
       <div class="footer-paws">
-        <span>🐾</span><span>🏃‍♀️</span><span>🎂</span><span>🐶</span><span>🌟</span>
+        <span>🐾</span><span>🏏</span><span>⚽</span><span>🎂</span><span>🐶</span><span>🌟</span>
       </div>
       <p class="footer-text">
-        Crafted with love & celebration for <strong>Gurinder</strong> on her Birthday.
+        Crafted with love & celebration for <strong>Gurinder</strong> on his Birthday.
       </p>
       <p class="footer-subtext">
-        Remember to give Nawab an extra treat, tie your laces tight, and conquer the year ahead! 🥇
+        Remember to give Nawab an extra treat, lace up your boots for matchday, and conquer the year ahead! 🏆
       </p>
       <a href="#hero" class="back-to-top">Back to top ↑</a>
     </div>

@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let audioCtx = null;
   let isMusicPlaying = false;
   let musicTimer = null;
-  let currentVibe = 'bday'; // 'bday', 'runner', 'nawab'
+  let currentVibe = 'bday'; // 'bday', 'stadium', 'nawab'
   let noteIndex = 0;
 
   function initAudio() {
@@ -61,11 +61,10 @@ document.addEventListener('DOMContentLoaded', () => {
     { f: 349.23, d: 1.4 }
   ];
 
-  const runnerMelody = [
-    { f: 329.63, d: 0.2 }, { f: 392.00, d: 0.2 }, { f: 440.00, d: 0.2 },
-    { f: 523.25, d: 0.3 }, { f: 440.00, d: 0.2 }, { f: 392.00, d: 0.2 },
-    { f: 587.33, d: 0.3 }, { f: 523.25, d: 0.4 }, { f: 659.25, d: 0.3 },
-    { f: 587.33, d: 0.2 }, { f: 523.25, d: 0.2 }, { f: 440.00, d: 0.4 }
+  const stadiumMelody = [
+    { f: 392.00, d: 0.2 }, { f: 523.25, d: 0.2 }, { f: 659.25, d: 0.25 },
+    { f: 783.99, d: 0.35 }, { f: 659.25, d: 0.2 }, { f: 783.99, d: 0.4 },
+    { f: 587.33, d: 0.25 }, { f: 659.25, d: 0.25 }, { f: 523.25, d: 0.5 }
   ];
 
   const nawabMelody = [
@@ -78,9 +77,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!isMusicPlaying) return;
     let playlist = bdayMelody;
     let oscType = 'triangle';
-    if (currentVibe === 'runner') {
-      playlist = runnerMelody;
-      oscType = 'sine';
+    if (currentVibe === 'stadium' || currentVibe === 'runner') {
+      playlist = stadiumMelody;
+      oscType = 'triangle';
     } else if (currentVibe === 'nawab') {
       playlist = nawabMelody;
       oscType = 'sine';
@@ -145,6 +144,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Mobile Friendly Vibe Menu Trigger
+  const vibeMenuTrigger = document.getElementById('vibeMenuTrigger');
+  const vibeSelectorMenu = document.getElementById('vibeSelectorMenu');
+
+  if (vibeMenuTrigger && vibeSelectorMenu) {
+    vibeMenuTrigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      vibeSelectorMenu.classList.toggle('show');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!vibeSelectorMenu.contains(e.target) && !vibeMenuTrigger.contains(e.target)) {
+        vibeSelectorMenu.classList.remove('show');
+      }
+    });
+  }
+
   // Vibe Selector buttons
   const vibeButtons = document.querySelectorAll('.vibe-btn');
   vibeButtons.forEach(btn => {
@@ -155,6 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
       currentVibe = btn.dataset.vibe;
       noteIndex = 0;
       clearTimeout(musicTimer);
+      if (vibeSelectorMenu) vibeSelectorMenu.classList.remove('show');
       if (!isMusicPlaying) {
         isMusicPlaying = true;
         musicToggleBtn.classList.add('playing');
@@ -318,10 +335,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const boopMessages = [
     '"Hehe! Nawab\'s tail is wagging at 200 RPM! 🐾"',
-    '"Boop received! Nawab\'s ears wiggled with pure joy! 🐕"',
-    '"Nawab rolled onto his back asking for belly rubs! 🥰"',
-    '"A big wet nose boop right back to mommy Gurinder! 🐶💋"',
-    '"Nawab officially declares Gurinder the Best Mom in the Galaxy! 👑✨"'
+    '"Boop received! Nawab\'s ears perked up with pure joy! 🐕"',
+    '"Nawab rolled onto his back asking Dad for belly rubs! 🥰"',
+    '"A big wet nose boop right back to Dad Gurinder! 🐶💋"',
+    '"Nawab officially declares Gurinder the Best Dog Dad in the Galaxy! 👑✨"'
   ];
 
   if (boopBtn) {
@@ -366,17 +383,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  document.getElementById('btnTreat').addEventListener('click', () => {
-    updateNawabJoy(15, '🦴 <em>"CRUNCH CRUNCH! Best treat ever! Gurinder mommy is #1!"</em>', 'Full & Delighted! 🐶🦴');
-  });
+  const btnTreat = document.getElementById('btnTreat');
+  if (btnTreat) {
+    btnTreat.addEventListener('click', () => {
+      updateNawabJoy(15, '🦴 <em>"CRUNCH CRUNCH! Best bone treat ever! Dad Gurinder is #1!"</em>', 'Full & Delighted! 🐶🦴');
+    });
+  }
 
-  document.getElementById('btnBall').addEventListener('click', () => {
-    updateNawabJoy(20, '🎾 <em>"I caught it! Throw it again, runner-mom! ZOOMIES ACTIVATED!"</em>', 'Turbo Zoomies! ⚡🐕');
-  });
+  const btnBall = document.getElementById('btnBall');
+  if (btnBall) {
+    btnBall.addEventListener('click', () => {
+      updateNawabJoy(20, '🏏 <em>"I caught the cricket ball! Nawab is the best fielder for his dad! ZOOMIES ACTIVATED!"</em>', 'Fielding Zoomies! ⚡🐕');
+    });
+  }
 
-  document.getElementById('btnScratches').addEventListener('click', () => {
-    updateNawabJoy(25, '👑 <em>"*Happy tail wags & soft puppy sighs* Nawab loves his mommy forever!"</em>', 'Maximum Royal Bliss! 💖👑');
-  });
+  const btnFootball = document.getElementById('btnFootball') || document.getElementById('btnScratches');
+  if (btnFootball) {
+    btnFootball.addEventListener('click', () => {
+      updateNawabJoy(25, '⚽ <em>"*Dribbles ball with nose* GOLAZO! Dad Gurinder & Nawab win the Championship Cup!"</em>', 'World Cup Champions! 🏆⚽');
+    });
+  }
 
 
   /* ==========================================================================
@@ -466,7 +492,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Required Password: "nawab" or "Nawab"
     if (normalizedInput === 'nawab') {
       vaultFeedback.className = 'vault-feedback success';
-      vaultFeedback.innerHTML = '✨ <strong>Access Granted!</strong> Welcome, Gurinder & Nawab! 🐾';
+      vaultFeedback.innerHTML = '✨ <strong>Access Granted!</strong> Welcome, Gurinder & his boy Nawab! 🐾';
       padlock.classList.add('unlocked');
       
       playUnlockFanfare();
@@ -559,7 +585,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="wish-granted">
         🎂✨ <strong>Wish Granted, Champion Gurinder!</strong> ✨🎂
         <div style="font-size: 1rem; color: #fff; font-weight: 500; margin-top: 6px;">
-          May this year be packed with podium finishes, runner's highs, and infinite tail-wags!
+          May this year bring match-winning sixes, top-corner golazos, and infinite tail-wags with your boy Nawab!
         </div>
       </div>
     `;
@@ -570,15 +596,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ==========================================================================
-     8. ATHLETE & DOG-MOM AFFIRMATIONS DISPENSER
+     8. ATHLETE, SPORTSMAN & DOG-DAD AFFIRMATIONS DISPENSER
      ========================================================================== */
   const affirmations = [
-    "\"You run not just with your legs, but with your unconquerable heart and soul!\"",
-    "\"To Nawab, you are royalty. To your friends, you are an absolute treasure!\"",
-    "\"Every mile is proof of your grit, and every smile is proof of your warmth.\"",
-    "\"May your shoes stay swift, your spirits high, and your belly-rub supply endless!\"",
-    "\"Champions aren't made in easy conditions—they are forged in dedication, just like Gurinder!\"",
-    "\"Nawab voted, and it's unanimous: You are the greatest dog-mom in the galaxy! 🐾✨\""
+    "\"Hit life's curveballs straight over the boundary ropes for a six!\"",
+    "\"To Nawab, you're the GOAT dog dad. To your crew, an absolute legend!\"",
+    "\"Precision of a striker on the pitch, heart of gold at home with your boy.\"",
+    "\"May your bat swing clean, your strikes find the net, and your belly-rub supply for Nawab stay endless!\"",
+    "\"True champions aren't defined by easy days—they're built on dedication and heart, just like Gurinder!\"",
+    "\"Nawab voted, and it's unanimous: You are the greatest dog-dad in the galaxy! 🐾🏆\""
   ];
 
   let currentAffirmationIdx = 0;
@@ -596,5 +622,38 @@ document.addEventListener('DOMContentLoaded', () => {
       cheerQuote.style.transition = 'opacity 0.3s ease';
     }, 200);
   });
+
+
+  /* ==========================================================================
+     9. MOBILE NAVIGATION DRAWER
+     ========================================================================== */
+  const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  if (mobileMenuToggle && navLinks) {
+    mobileMenuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      mobileMenuToggle.classList.toggle('open', isOpen);
+      mobileMenuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    // Close menu when tapping any link
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        mobileMenuToggle.classList.remove('open');
+        mobileMenuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!navLinks.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+        navLinks.classList.remove('open');
+        mobileMenuToggle.classList.remove('open');
+        mobileMenuToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
 
 });
